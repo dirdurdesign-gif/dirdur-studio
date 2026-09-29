@@ -371,7 +371,7 @@ function animate(r,first){
  if(!G)return;
  if(ctx)ctx.revert();
  ctx=gsap.context(function(){
-  if(r.k==='home')homeAnim(first);
+  if(r.k==='home')return homeAnim(first);
   if(r.k==='work')workAnim();
   if(r.k==='about')aboutAnim();
   if(r.k==='contact')contactAnim();
@@ -389,7 +389,7 @@ function homeAnim(first){
    rotation:function(){return gsap.utils.random(-10,10)},scale:.7,opacity:0,
    duration:1.2,ease:'expo.out',stagger:{each:.05,from:'random'}},'-=.9');
  // idle float
- gsap.utils.toArray('.fl').forEach(function(el){
+ gsap.utils.toArray('.w .fl').forEach(function(el){
   gsap.to(el,{y:gsap.utils.random(-4,4),x:gsap.utils.random(-2,2),rotation:gsap.utils.random(-.8,.8),
    duration:gsap.utils.random(3.2,5),ease:'sine.inOut',yoyo:true,repeat:-1,delay:gsap.utils.random(0,2)});
  });
