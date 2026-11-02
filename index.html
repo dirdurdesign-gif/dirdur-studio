@@ -370,7 +370,9 @@ html,body{overflow-x:clip}
 .st .ww{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.06em;color:#35CAFF;margin-top:-4px}
 .st b .unit{font-family:"Singulari",sans-serif;font-weight:400;font-size:.62em;color:#fff}
 /* ===== Hebrew weight scale: 200 display · 300 body · 500 titles/labels/buttons ===== */
-.about h1.ab-h,.contact h1,#p-work .pv-s .pv-head h1,.pv-cta p{font-weight:200}
+.about h1.ab-h,.contact h1,.pv-cta p{font-weight:200}
+#p-work .pv-s .pv-head h1{font-weight:400}
+#p-work .pv-s .pv-head p{color:#5f666d}
 #p-work .pv-s .pv-head p,#p-work .pv-s .pv-head p.pv-tag,.pv-tb p,.about .ab-txt p,.svc p,.c-intro,.checks li,.reach p,.st span:not(.num):not(.pre):not(.unit),
 #p-work .pv-meta span,.pv-next span,#p-work .pv-nav,#p-work .pv-nav a,.chips button{font-weight:300}
 .pv-tb h2,.pv-next b,.svc h3,#p-work .pv-meta b,.lbl,.btn,.pv-cta a,.st b .unit{font-weight:500}
@@ -493,7 +495,7 @@ function work(id){
  var n=PV.he[id]||D.names[id],o=D.order,nx=o[(o.indexOf(id)+1)%o.length],G=GAL[id],P=PV.pal[id],NP=PV.pal[nx],ex=EXTRA[id]||[],h='';
  h+='<div class="pv pv-s" style="--s:'+P[1]+';--d:'+P[3]+'">';
  h+='<section class="pv-head" dir="rtl"><div class="pv-nav"><a href="#/">→ לכל הפרויקטים</a></div>';
- h+='<h1>'+n[0]+'</h1>'+(PV.tag&&PV.tag[id]?'<p class="pv-tag">'+PV.tag[id]+'</p>':'')+(PV.txt[id]||'').split('\n').map(function(t){return '<p>'+t+'</p>'}).join('');
+ h+='<h1>'+n[0]+'</h1>'+(PV.txt[id]||'').split('\n').map(function(t){return '<p>'+t+'</p>'}).join('');
  h+='<div class="pv-meta">'+(G&&G.client?'<div><span>לקוח</span><b>'+G.client+'</b></div>':'')+'<div><span>תחום</span><b>'+n[1]+'</b></div>'+((G&&G.extra)||[]).map(function(e){return '<div><span>'+e[0]+'</span><b>'+e[1]+'</b></div>'}).join('')+'</div></section>';
  h+='<section class="pv-stack">';
  if(G){
