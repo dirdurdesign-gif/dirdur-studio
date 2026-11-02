@@ -382,16 +382,16 @@ html,body{overflow-x:clip}
 .fx-split{position:relative;isolation:isolate;background:#000}
 .fx-copy{color:#0b0f12;margin-bottom:clamp(28px,4vw,48px)}
 .fx-k{font-family:"Montserrat",sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:#8d939a;margin:0 0 18px}
-.fx-quote{margin:0;font-family:"Montserrat",sans-serif;font-weight:600;font-size:clamp(1.9rem,4.6vw,4rem);line-height:1.08;letter-spacing:-.02em;max-width:20ch;text-wrap:balance}
+.fx-quote{margin:0 auto;display:grid;place-items:end center;font-family:"Montserrat",sans-serif;font-weight:600;font-size:clamp(1.8rem,4.2vw,3.6rem);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.fx-quote span{grid-area:1/1;text-wrap:balance;opacity:0;filter:blur(12px);transform:translateY(14px);transition:opacity .5s ease,filter .5s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.fx-quote span.now{opacity:1;filter:blur(0);transform:none}
 .fx-phone{position:relative;width:clamp(260px,26vw,350px);aspect-ratio:9/16;border-radius:24px;padding:3px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 90px -20px rgba(53,202,255,.45)}
 .fx-phone::before{content:"";position:absolute;z-index:-1;left:-100vw;right:-100vw;bottom:50%;height:300vh;background:#fff;pointer-events:none}
 .fx-phone::after{content:"";position:absolute;z-index:-1;left:50%;top:75%;width:min(120vw,900px);aspect-ratio:1;translate:-50% -50%;background:radial-gradient(closest-side,rgba(53,202,255,.2),transparent);pointer-events:none}
 .fx-phone video{display:block;width:100%;height:100%;object-fit:cover;border-radius:20px;background:#111}
 .fx-card{position:absolute;z-index:2;padding:14px 22px;border-radius:16px;background:rgba(18,20,23,.62);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);text-align:right;box-shadow:0 14px 40px -12px rgba(0,0,0,.6);white-space:nowrap}
-.fx-c1{top:56px;right:-70px}
-.fx-c2{bottom:64px;left:-70px}
+.fx-c1{bottom:19%;right:-70px}
 .fx-card b{display:block;font-weight:700;font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.15;color:#fff}
-.fx-c2 b{font-family:"Montserrat",sans-serif;text-align:right}
 .fx-card span{display:block;margin-top:4px;font-weight:300;font-size:.82rem;color:rgba(255,255,255,.6)}
 .fx-bar{position:absolute;left:18px;right:18px;bottom:16px;height:3px;border-radius:3px;background:rgba(255,255,255,.25);overflow:hidden}
 .fx-bar i{position:absolute;inset:0;background:var(--grad);transform:scaleX(0);transform-origin:left}
@@ -436,7 +436,7 @@ html,body{overflow-x:clip}
 .yt-v h4{margin:12px 0 4px;font:600 1rem/1.35 "Montserrat",sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .yt-v p{margin:0;font:400 .85rem "Montserrat",sans-serif;color:#aaa}
 @media (max-width:900px){.yt-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:760px){.fx-c1{right:-14px;top:64px}.fx-c2{left:-14px;bottom:56px}.fx-card{padding:11px 16px}.yt-go{display:none}}
+@media (max-width:760px){.fx-c1{right:-14px;bottom:19%}.fx-card{padding:11px 16px}.yt-go{display:none}}
 @media (max-width:520px){.yt-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -559,12 +559,12 @@ function fidCards(list){return list.map(function(v){
 function fidHTML(){
  var tot=0;FID.forEach(function(v){var n=parseFloat(v[3]);tot+=v[3].slice(-1)==='M'?n*1e6:n*1e3});
  var h='<section class="fx"><div class="fx-split"><div class="fx-talk">';
- h+='<div class="fx-copy"><p class="fx-k">Fidias Panayiotou &middot; on his podcast</p><h2 class="fx-quote">&ldquo;Out of 500 thumbnails&hellip; he&rsquo;s an expert.&rdquo;</h2></div>';
+ h+='<div class="fx-copy"><p class="fx-k">Fidias Panayiotou &middot; on his podcast</p><h2 class="fx-quote"><span data-t="0">&ldquo;I think it is a cheat code.&rdquo;</span><span data-t="1.9">&ldquo;I put a community post: &lsquo;We are hiring a thumbnail maker.&rsquo;&rdquo;</span><span data-t="5.6">&ldquo;The winner? A 16&#8209;year&#8209;old from Israel.&rdquo;</span><span data-t="7.8" class="now">&ldquo;Out of 500 thumbnails&hellip; he&rsquo;s an expert.&rdquo;</span></h2></div>';
  h+='<div class="fx-phone"><video src="video/fidias-talk.mp4" poster="video/fidias-talk-poster.webp" muted loop playsinline preload="metadata"></video>';
  h+='<button class="fx-snd" type="button" aria-label="Sound"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M23 9l-6 6M17 9l6 6"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M19 5a10 10 0 010 14"/></svg><span>Sound</span></button>';
  h+='<div class="fx-bar"><i></i></div>';
  h+='<div class="fx-card fx-c1" dir="rtl"><b>זה הייתי אני.</b><span>הילד בן ה־16 מישראל</span></div>';
- h+='<div class="fx-card fx-c2" dir="rtl"><b dir="ltr">1 / 500</b><span>נבחר מתוך 500 תאמבניילים</span></div></div></div>';
+ h+='</div></div>';
  h+='</div><div class="yt" dir="ltr"><div class="yt-in"><div class="yt-ban"><div class="yt-mos">'+FID.concat(FID).slice(0,40).map(function(v){return '<img src="'+v[0]+'" alt="" loading="lazy">'}).join('')+'</div><b>FIDIAS</b></div>';
  h+='<div class="yt-ch"><img class="yt-av" src="img/fidias/avatar.webp" alt="Fidias"><div><h3>Fidias <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.2l-4.2-4.2 1.4-1.4 2.8 2.8 6.3-6.3 1.4 1.4z"/></svg></h3>';
  h+='<p>@FidiasPanayiotou &middot; '+FID.length+' thumbnails &middot; '+Math.floor(tot/1e6)+'M+ views</p><p class="by">Thumbnails by DIRDUR STUDIO</p></div>';
@@ -574,7 +574,7 @@ function fidHTML(){
  return h;}
 function fidWire(){
  var root=document.querySelector('#p-work .fx');if(!root)return;
- var vid=root.querySelector('video'),snd=root.querySelector('.fx-snd'),bar=root.querySelector('.fx-bar i'),qs=[].slice.call(root.querySelectorAll('.fx-q li'));
+ var vid=root.querySelector('video'),snd=root.querySelector('.fx-snd'),bar=root.querySelector('.fx-bar i'),qs=[].slice.call(root.querySelectorAll('.fx-quote span'));
  function views(v){var n=parseFloat(v[3]);return v[3].slice(-1)==='M'?n*1e6:n*1e3}
  root.querySelector('.yt-chips').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   [].forEach.call(this.children,function(x){x.classList.toggle('on',x===b)});
