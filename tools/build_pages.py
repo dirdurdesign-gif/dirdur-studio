@@ -18,8 +18,8 @@ def page(path,title,desc):
     url=BASE+path
     t=re.sub(r'<title>.*?</title>','<title>%s</title>'%esc(title),t,count=1)
     t=re.sub(r'(<meta name="description" content=")[^"]*(")',lambda m:m.group(1)+esc(desc)+m.group(2),t,count=1)
-    t=re.sub(r'(<meta property="og:title" content=")[^"]*(")',lambda m:m.group(1)+esc(title)+m.group(2),t,count=1)
-    t=re.sub(r'(<meta property="og:description" content=")[^"]*(")',lambda m:m.group(1)+esc(desc)+m.group(2),t,count=1)
+    short=title.split(' | ')[0]+' | DIRDUR STUDIO'
+    t=re.sub(r'(<meta property="og:title" content=")[^"]*(")',lambda m:m.group(1)+esc(short)+m.group(2),t,count=1)
     t=re.sub(r'(<meta property="og:url" content=")[^"]*(")',lambda m:m.group(1)+url+m.group(2),t,count=1)
     t=re.sub(r'(<link rel="canonical" href=")[^"]*(")',lambda m:m.group(1)+url+m.group(2),t,count=1)
     t=re.sub(r'(<link rel="alternate" hreflang="he" href=")[^"]*(")',lambda m:m.group(1)+url+m.group(2),t,count=1)
