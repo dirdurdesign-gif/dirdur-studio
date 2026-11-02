@@ -395,6 +395,8 @@ html,body{overflow-x:clip}
 .fx-card span{display:block;margin-top:4px;font-weight:300;font-size:.82rem;color:rgba(255,255,255,.6)}
 .fx-bar{position:absolute;left:18px;right:18px;bottom:16px;height:3px;border-radius:3px;background:rgba(255,255,255,.25);overflow:hidden}
 .fx-bar i{position:absolute;inset:0;background:var(--grad);transform:scaleX(0);transform-origin:left}
+.fx-src{margin-top:22px;font:400 .82rem "Montserrat",sans-serif;letter-spacing:.04em;color:rgba(255,255,255,.55);transition:color .2s}
+.fx-src:hover{color:var(--b2)}
 .pv-s .pv-head.fx-head{padding-bottom:0}
 #p-work .fx-head .pv-nav{margin-bottom:clamp(8px,1.5vw,16px)}
 .fx-snd{position:absolute;top:16px;left:16px;display:flex;align-items:center;gap:8px;padding:8px 13px;border:0;border-radius:999px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font:500 .78rem "Montserrat",sans-serif;cursor:pointer}
@@ -564,7 +566,7 @@ function fidHTML(){
  h+='<button class="fx-snd" type="button" aria-label="Sound"><svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M23 9l-6 6M17 9l6 6"/></svg><svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7M19 5a10 10 0 010 14"/></svg><span>Sound</span></button>';
  h+='<div class="fx-bar"><i></i></div>';
  h+='<div class="fx-card fx-c1" dir="rtl"><b>זה הייתי אני.</b><span>הילד בן ה־16 מישראל</span></div>';
- h+='</div></div>';
+ h+='</div><a class="fx-src" href="https://vt.tiktok.com/ZSgE6qXHJ/" target="_blank" rel="noopener">Watch the original on TikTok <span aria-hidden="true">&#8599;</span></a></div>';
  h+='</div><div class="yt" dir="ltr"><div class="yt-in"><div class="yt-ban"><div class="yt-mos">'+FID.concat(FID).slice(0,40).map(function(v){return '<img src="'+v[0]+'" alt="" loading="lazy">'}).join('')+'</div><b>FIDIAS</b></div>';
  h+='<div class="yt-ch"><img class="yt-av" src="img/fidias/avatar.webp" alt="Fidias"><div><h3>Fidias <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.2l-4.2-4.2 1.4-1.4 2.8 2.8 6.3-6.3 1.4 1.4z"/></svg></h3>';
  h+='<p>@FidiasPanayiotou &middot; '+FID.length+' thumbnails &middot; '+Math.floor(tot/1e6)+'M+ views</p><p class="by">Thumbnails by DIRDUR STUDIO</p></div>';
