@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://dirdurstudio.com/</loc>
-    <xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/?lang=en"/>
-    <lastmod>2026-11-03</lastmod><priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://dirdurstudio.com/?lang=en</loc>
-    <xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/?lang=en"/>
-    <lastmod>2026-11-03</lastmod><priority>0.8</priority>
-  </url>
+  <url><loc>https://dirdurstudio.com/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/mi-ze-shem/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/mi-ze-shem/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/mi-ze-shem/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/dani-kaganovich/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/dani-kaganovich/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/dani-kaganovich/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/fidias/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/fidias/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/fidias/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/show-posters/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/show-posters/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/show-posters/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/israel-bidur-awards/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/israel-bidur-awards/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/israel-bidur-awards/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/da-cohen/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/da-cohen/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/da-cohen/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/masters/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/masters/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/masters/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/max/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/max/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/max/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/halperin/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/halperin/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/halperin/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/hamagdania-neeman/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/hamagdania-neeman/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/hamagdania-neeman/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/snake/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/snake/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/snake/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/trivia-israel-bidur/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/trivia-israel-bidur/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/trivia-israel-bidur/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/maccabi-ironi-netivot/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/maccabi-ironi-netivot/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/maccabi-ironi-netivot/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/israel-shorts/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/israel-shorts/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/israel-shorts/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/link/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/link/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/link/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/scam-hunter/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/scam-hunter/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/scam-hunter/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/inda-game-million/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/inda-game-million/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/inda-game-million/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/glasses-gift-box/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/glasses-gift-box/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/glasses-gift-box/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/about/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/about/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/contact/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/contact/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/contact/?lang=en"/></url>
+  <url><loc>https://dirdurstudio.com/accessibility/</loc><xhtml:link rel="alternate" hreflang="he" href="https://dirdurstudio.com/accessibility/"/><xhtml:link rel="alternate" hreflang="en" href="https://dirdurstudio.com/accessibility/?lang=en"/></url>
 </urlset>
